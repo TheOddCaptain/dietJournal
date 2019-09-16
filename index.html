@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Diet Journal</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Website to journal your diet">
+    <meta name="keywords" content="Diet, journal">
+    <meta name="author" content="Odd E. Haraldsen">
+    <!--  <link rel="icon" href="/favicon.ico" type="">  -->
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+    <div class="input-container">
+        <div class="input-wrapper">
+            <fieldset>
+                <legend>Input fields</legend>
+                <input type="text" class="dish-name" placeholder="Dish name" autofocus>
+
+                <select class="meal-type">
+                    <option value="Snack" selected >Snack</option>
+                    <option value="Breakfast" >Breakfast</option>
+                    <option value="Lunch" >Lunch</option>
+                    <option value="Dinner" >Dinner</option>
+                    <option value="EveningMeal" >Evening meal</option>
+                </select>
+                
+
+                <input type="number" class="calories" placeholder="Calories">
+
+                <input type="date" class="date today" placeholder="Date">
+
+                <button class="add-btn"><ion-icon name="add-circle-outline"></ion-icon></button>
+
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="output-container">
+        
+        <div class="descriptions">
+            <h2 class="item">Dish name</h2>
+            <h2 class="item">Meal type</h2>
+            <h2 class="item">Calories</h2>
+            <h2 class="item date-margin">Date</h2>
+        </div>
+        <div class="output-wrapper">
+            <!--
+    <div class="output-child" id="meal-0">
+        <div class="dish-names-output item output">Cereal</div>
+
+        <div class="meal-types-output item output">Breakfast</div>
+
+        <div class="calories-output item output">300</div>
+
+        <div class="dates-output item output">Date</div>
+        <div class="delete-item">
+            <button class="delete-btn"><ion-icon name="remove-circle-outline"></ion-icon></button>
+        </div>
+    </div>
+
+    <div class="output-child" id="meal-1">
+        <div class="dish-names-output item output">Toast</div>
+
+        <div class="meal-types-output item output">Lunch</div>
+
+        <div class="calories-output item output">800</div>
+
+        <div class="dates-output item output">Date</div>
+        <div class="delete-item">
+            <button class="delete-btn"><ion-icon name="remove-circle-outline"></ion-icon></button>
+        </div>
+    </div>
+        -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
