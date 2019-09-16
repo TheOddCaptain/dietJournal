@@ -1,0 +1,90 @@
+
+/* GLOBAL */
+* {
+    margin: 0;
+    paddin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    color: black;
+    line-height: 1.4;
+}
+fieldset {
+    padding: 0;
+    width: 1020px;
+}
+input {
+    margin: 0 2.5em;
+}
+
+h2 {
+    margin-right: 2.5em;
+    padding-right: 2.5em;
+}
+
+.descriptions {
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    padding-left: 2.5em;
+    padding-bottom: 2em;
+    width: 978px;
+}
+
+.item {
+    float: left;
+    border-right: 1px solid #e7e7e7; 
+}
+
+.output-wrapper {
+    width: 1023px;
+    height: 35px;
+}
+.output-child {
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+}
+
+.dish-names-output {
+    width: 234px;
+    padding: 10px 0 10px 10px;
+}
+.meal-types-output {
+    width: 242px;
+    padding: 10px 0 10px 10px;
+}
+.calories-output {
+    width: 226px;
+    padding: 10px 0 10px 10px;
+}
+.dates-output {
+    width: 179px;
+    padding: 10px 0 10px 10px;
+}
+.date-margin {
+    margin-right: 0;
+}
+
+.meal-type {
+    width: 195px;
+    margin-left: 34px;
+    margin-right: 10px;
+}
+.add-btn, .delete-btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+.delete-btn {
+    margin-left: 36px;
+    padding-right: 10px;
+}
