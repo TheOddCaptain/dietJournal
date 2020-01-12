@@ -2,89 +2,139 @@
 /* GLOBAL */
 * {
     margin: 0;
-    paddin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+/* END GLOBAL */
 
 body {
-    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1em;
     color: black;
-    line-height: 1.4;
+    line-height: 1;
+    background-image: url("./superfoods-eat-pregnancy.jpg");
+    background-repeat: no-repeat;
 }
+.top-text {
+    text-align: center;
+    color: white;
+}
+.center-container {
+    margin-top: 1em;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+.input-wrapper {
+height: 15%;
+}
+
 fieldset {
-    padding: 0;
-    width: 1020px;
+    height: 100%;
+    position: relative;
 }
-input {
-    margin: 0 2.5em;
-}
-
-h2 {
-    margin-right: 2.5em;
-    padding-right: 2.5em;
-}
-
-.descriptions {
-    border-bottom: 1px solid #e7e7e7;
-    border-right: 1px solid #e7e7e7;
-    padding-left: 2.5em;
-    padding-bottom: 2em;
-    width: 978px;
+.selectors {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
 }
 
-.item {
-    float: left;
-    border-right: 1px solid #e7e7e7; 
+.dish-name, .meal-type, .calories, .date{
+    max-width: 90%;
+    min-width: 70%;
+    margin: .25em 1em;
 }
 
-.output-wrapper {
-    width: 1023px;
-    height: 35px;
-}
-.output-child {
-    border-bottom: 1px solid #e7e7e7;
-    border-right: 1px solid #e7e7e7;
+.add {
+    padding: 12% 0;
+    float: right;
+    margin-right: 5%;
 }
 
-.dish-names-output {
-    width: 234px;
-    padding: 10px 0 10px 10px;
-}
-.meal-types-output {
-    width: 242px;
-    padding: 10px 0 10px 10px;
-}
-.calories-output {
-    width: 226px;
-    padding: 10px 0 10px 10px;
-}
-.dates-output {
-    width: 179px;
-    padding: 10px 0 10px 10px;
-}
-.date-margin {
-    margin-right: 0;
-}
-
-.meal-type {
-    width: 195px;
-    margin-left: 34px;
-    margin-right: 10px;
-}
-.add-btn, .delete-btn {
-    font-size: 35px;
+.add-btn {
+    font-size: 3em;
     background: none;
     border: none;
-    color: #000;
+    color: rgb(0, 156, 52);
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
     line-height: 1.1;
-    margin-left: 10px;
+}
+/* OUTPUT */
+
+.output-child, .descriptions {
+    border: lightgray solid;
+    border-width: 1px;
+    overflow: hidden;
+    position: relative;
+}
+
+.descriptions {
+    padding: .5em 0;
+    vertical-align: middle;
+}
+
+.item {
+    font-size: 1em;
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    
+}
+.dish-names-output, .meal-types-output, .calories-output, .dates-output {
+    border-right: lightgray solid;
+    border-width: 1px;
+}
+.output-child {
+    height: 120%;
+}
+.output {
+    font-size: 1em;
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
 }
 .delete-btn {
-    margin-left: 36px;
-    padding-right: 10px;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    margin: 0;
 }
+
+.delete-item {
+    padding-left: 4%;
+    text-align: center;
+    background-color: white;
+}
+@media only screen and (min-width: 600px) {
+    .input-wrapper {
+        height: 15vh;
+        }
+    .add {
+        padding: 8% 0;
+    }
+    .dish-name, .meal-type, .calories, .date{
+        min-width: 80%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    .input-wrapper {
+        height: 15vh;
+        }
+    .add {
+        padding: 3% 0;
+    }
+    .dish-name, .meal-type, .calories, .date{
+        min-width: 90%;
+    }
+}
+
