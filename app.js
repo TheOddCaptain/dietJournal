@@ -94,7 +94,7 @@ var UImodule = (function () {
             var html, newHTML,element;
             //create html string with placeholder text
             element = DOMstrings.outputContainer;
-            html = '<div class="output-child" id="meal-%id%"> <div class="dish-names-output item output">%dishObj%</div> <div class="meal-types-output item output">%mealObj%</div><div class="calories-output item output">%caloriesObj% Cal</div><div class="dates-output item output">%dateObj%</div><div class="delete-item"><button class="delete-btn"><ion-icon name="remove-circle-outline"></ion-icon></button></div></div>'
+            html = '<div class="output-child" id="meal-%id%"><div class="dish-names-output output">%dishObj%</div><div class="meal-types-output output">%mealObj%</div><div class="calories-output output">%caloriesObj%</div><div class="dates-output output">%dateObj%</div><div class="output delete-item"><div class="delete-btn"><ion-icon name="remove-circle-outline"></ion-icon></div></div></div>'
             //replace the text with some actual data from local storage
             newHTML = html.replace('%id%', obj.id);
             newHTML = newHTML.replace('%dishObj%', obj.dishName);
